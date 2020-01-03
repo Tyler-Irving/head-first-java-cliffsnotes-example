@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Scanner;
+
 public class App {
 
     public static double getRandomNumber() {
@@ -8,18 +10,35 @@ public class App {
     }
 
     public static void main(final String[] args) throws Exception {
-        System.out.println("This app is demonstrating what I went over in chapter one of 'Head First JAVA'");
-        while (true) {
-            final double randomNumber = getRandomNumber();
-            if (randomNumber > 5) {
-                System.out.println("The number is greater than 5");
-                break;
-            } else if (randomNumber < 5) {
-                System.out.println("The number is less than 5");
-                break;
-            } else if (randomNumber == 5) {
-                System.out.println("The number is 5");
-                break;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int number = input.nextInt();
+        input.close();
+        System.out.println("Cash: " + number);
+        while (number > 0) {
+            number -= 5;
+            final double slot1 = getRandomNumber();
+            final double slot2 = getRandomNumber();
+            final double slot3 = getRandomNumber();
+            System.out.println("__________________");
+            System.out.println("| " + slot1 + " | " + slot2 + " | " + slot3 + " |");
+            System.out.println("__________________");
+            if (slot1 == slot2 && slot1 == slot3) {
+                int jackpot = number * 2;
+                number += jackpot;
+                System.out.println("WIN");
+                System.out.println("Current Cash: " + number);
+                Thread.sleep(5000);
+            } else if (slot1 == slot2 || slot2 == slot3) {
+                number += 15;
+                System.out.println("WIN");
+                System.out.println("Current Cash: " + number);
+                // Thread.sleep(5000);
+            } else {
+                System.out.println("LOSS");
+                System.out.println("Current Cash: " + number);
+                // Thread.sleep(5000);
+
             }
         }
     }

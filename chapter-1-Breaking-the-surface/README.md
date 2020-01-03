@@ -8,7 +8,7 @@
 - Looping 
 - Conditional branching (if tests)
 
-## The way Java Works
+## How does Java work?
 Java follows four steps
 1. Source Code
 - The first step is the programmers (you) work. The code is written here.
@@ -20,10 +20,30 @@ can be successfully ran.
 4. Virtual Machines
 - Your friends don’t have a physical Java Machine, but they all have a virtual Java machine (implemented in software) running inside their electronic gadgets. The virtual machine reads and runs the bytecode.
 
-## Code Structure in Java 
+## How is code structured in Java?
 Java's code structure of 3 things: the source file, class/es, and a main method.
 
-## The main() method
+## What is does a Java class look like?
+```java 
+public class SampleApp {
+    public static void main (String[] args) {
+        System.out.print("Hello World");
+    }
+}
+```
+- `public` - makes the class & method available to everyone
+- `class` - in Java you have to declare the type of each new thing you make
+- `SampleApp` - This is just the name of the app
+- `{` / `}` - these tell the compiler where the code for a class or a method start, and end
+- `void` - This is the return type of a method, in this case the return type is void because the method doesn't return a value
+- `main` - the name of the method
+- `String[] args` - arguments to the method. This method must be given an array of Strings, and the array will be called 'args'
+- `System.out.print()` - this says "print to standard output" (defaults to the command-line)
+- `"Hello World"` - this is the string that will be printed
+- `;` - every statement MUST end in a semicolon
+
+
+## A main( ) method???
 In Java, everything goes in a class.
 Running a program means telling the Java Virtual Machine (JVM) to
 “Load the MyApp class, then start executing its main() method.
@@ -33,10 +53,10 @@ No matter how big your program is (in other words, no matter how many
 classes your program uses), there’s got to be a main() method to get the
 ball rolling
 
-## Looping 
+## How does Java handle a while loop?
 In chapter 1 there are 3 types of loops mentioned: `while`, `do-while`, and `for` loops. This chapter only goes into the logic behind a `while` loop and it works just the same as in python. A conditional test is needed for the loop to even begin, and the result of the test is a `boolean` value (`true` || `false`). If the value is `true`, the code block will run and repeat, always starting at the test to check the value. Else if the value is `false`, the loop will not run and the program will continue past it, unless that is the end of your program.
 
-## Conditional branching (if tests)
+## What does conditional branching look like in Java?
 Conditional branching follows the same logic that a `while` loop follows, but with a couple differences. 
 Take a look at this block of code
 ```java 
