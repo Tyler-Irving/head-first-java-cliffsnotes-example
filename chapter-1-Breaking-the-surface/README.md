@@ -24,4 +24,28 @@ can be successfully ran.
 Java's code structure of 3 things: the source file, class/es, and a main method.
 
 ## The main() method
-The main method is the leader of the group. The java file depends on this method to even know what to do. Inside of this method is how y
+In Java, everything goes in a class.
+Running a program means telling the Java Virtual Machine (JVM) to
+“Load the MyApp class, then start executing its main() method.
+Keep running ‘til all the code in main is finished.”
+The main() method is where your program starts running.
+No matter how big your program is (in other words, no matter how many
+classes your program uses), there’s got to be a main() method to get the
+ball rolling
+
+## Looping 
+In chapter 1 there are 3 types of loops mentioned: `while`, `do-while`, and `for` loops. This chapter only goes into the logic behind a `while` loop and it works just the same as in python. A conditional test is needed for the loop to even begin, and the result of the test is a `boolean` value (`true` || `false`). If the value is `true`, the code block will run and repeat, always starting at the test to check the value. Else if the value is `false`, the loop will not run and the program will continue past it, unless that is the end of your program.
+
+## Conditional branching (if tests)
+Conditional branching follows the same logic that a `while` loop follows, but with a couple differences. 
+Take a look at this block of code
+```java 
+if (randomNumber > 5) {
+    System.out.println("The number is greater than 5");
+} else if (randomNumber < 5) {
+    System.out.println("The number is less than 5");
+} else if (randomNumber == 5) {
+    System.out.println("The number is 5");
+}
+```
+The if statements are checking if the conditional is `true` or `false`, but in a different way. Instead of saying "while the randomNumber is greater than 5, do this", its asking "If the randomNumber is greater than 5, do this. If not, do something else." This gives you greater reach for more conditions in your code, and they work together in tandum. 
