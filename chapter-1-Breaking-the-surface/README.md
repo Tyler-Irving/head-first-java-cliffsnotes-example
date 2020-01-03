@@ -44,17 +44,10 @@ public class SampleApp {
 
 
 ## A main( ) method???
-In Java, everything goes in a class.
-Running a program means telling the Java Virtual Machine (JVM) to
-“Load the MyApp class, then start executing its main() method.
-Keep running ‘til all the code in main is finished.”
-The main() method is where your program starts running.
-No matter how big your program is (in other words, no matter how many
-classes your program uses), there’s got to be a main() method to get the
-ball rolling
+In Java, everything goes into a class. Running a program means telling the Java Virtual Machine (JVM) to “Load the MyApp class, then start executing its main() method. Keep running ‘til all the code in main is finished.” The main() method is where your program starts running. No matter how big your program is (in other words, no matter how many classes your program uses), there’s got to be a main() method to get the ball rolling
 
 ## How does Java handle a while loop?
-In chapter 1 there are 3 types of loops mentioned: `while`, `do-while`, and `for` loops. This chapter only goes into the logic behind a `while` loop and it works just the same as in python. A conditional test is needed for the loop to even begin, and the result of the test is a `boolean` value (`true` || `false`). If the value is `true`, the code block will run and repeat, always starting at the test to check the value. Else if the value is `false`, the loop will not run and the program will continue past it, unless that is the end of your program.
+In chapter 1 there are 3 types of loops mentioned: `while`, `do-while`, and `for` loops. This chapter only goes into the logic behind a `while` loop and it works just the same as in python. A conditional test is needed for the loop to even begin, and the result of the test is a `boolean` value (`true` || `false`). If the value is `true`, the code block will run and repeat, always starting at the test to check the value. Else if the value is `false`, the loop will not run and the program will continue past it unless that is the end of your program.
 
 ## What does conditional branching look like in Java?
 Conditional branching follows the same logic that a `while` loop follows, but with a couple differences. 
@@ -68,4 +61,4 @@ if (randomNumber > 5) {
     System.out.println("The number is 5");
 }
 ```
-The if statements are checking if the conditional is `true` or `false`, but in a different way. Instead of saying "while the randomNumber is greater than 5, do this", its asking "If the randomNumber is greater than 5, do this. If not, do something else." This gives you greater reach for more conditions in your code, and they work together in tandum. 
+The if statements are checking if the conditional is `true` or `false` but in a different way. Instead of saying "while the randomNumber is greater than 5, do this", it's asking "If the randomNumber is greater than 5, do this. If not, do something else." This gives you greater reach for more conditions in your code, and they work together in tandem. 
