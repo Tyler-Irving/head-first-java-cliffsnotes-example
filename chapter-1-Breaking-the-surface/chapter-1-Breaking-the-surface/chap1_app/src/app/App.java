@@ -33,11 +33,11 @@ public class App {
                 number += 15;
                 System.out.println("WIN");
                 System.out.println("Current Cash: " + number);
-                // Thread.sleep(5000);
+                Thread.sleep(5000);
             } else {
                 System.out.println("LOSS");
                 System.out.println("Current Cash: " + number);
-                // Thread.sleep(5000);
+                Thread.sleep(5000);
 
             }
         }
