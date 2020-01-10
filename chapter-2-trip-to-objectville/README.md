@@ -6,7 +6,6 @@
 - Intro to Overiding Methods
 - Whats in a Class
 - Making Your First Object
-- Getting out of main( )
 
 ## Why are they fighting over chairs? 
 link to the story: http://ikucukkoc.baun.edu.tr/lectures/EMM3115/Head_First_Java.pdf
