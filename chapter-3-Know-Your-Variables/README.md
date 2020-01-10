@@ -22,11 +22,15 @@ Variables must have a name & a type
 
 public class App {
  public static void main(String[] args) throws Exception {
- // line 26 is the example
  int count = 0
  }
 }
 ```
+### Rule of thumb for naming variables
+- Must start with a letter, underscore (_), or a dollar sign ($).
+- Don't start with a number, but they can be used in the name.
+- Name can be whatever you want, but they can be java keywords.
+
 
 ## What is a primitive variable?
 A primitive variable is just like a cup. A container. It holds stuff, & in this case its a value. 
@@ -44,10 +48,6 @@ A primitive variable is just like a cup. A container. It holds stuff, & in this 
 |double|64 bits|vaires| 
 
 ## Java keywords?
-- Must start with a letter, underscore (_), or a dollar sign ($).
-- Don't start with a number, but they can be used in the name.
-- Name can be whatever you want, but they can be java keywords.
-
 Java has, as of right now, 51 keywords. I'm not naming them all, & you don't have to remember them. Just acknowledge their existence.
 
 ## What are reference variables?
