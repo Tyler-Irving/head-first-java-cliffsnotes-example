@@ -26,17 +26,16 @@ pass-by-value can be thought of pass-by-copy
 
 ### Breakdown
 If you declare an int variable & assign the value of 7, the bit pattern goes into the variable, x.
-```java 
-int x = 7;
-```
 Now declare a method with an int param named z.
-```java
-void go(int z) {
- // code
-}
-```
 Calling the `go` method with the variable x will copy the bits of x & change/copy them into the z parameter of go.
+```java 
+int x = 7; // Declare an int variable and assign it the value 7
 
+void go(int z) { } // Decalare a method with an int parameter named z
+
+foo.go(x)
+void go(int z) { } // Call the go() method, passing the variable x as the argument. The bits in x are copied, and the copy lands in z.
+```
 ## Getters & Setters?
 A `Getters` sole purpose?
 Sending back the return value of whatever you're interacting with.
