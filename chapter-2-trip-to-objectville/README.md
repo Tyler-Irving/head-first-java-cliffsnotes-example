@@ -32,19 +32,19 @@ class SuperClass {
 }
 
 class Square extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Circle extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Triangle extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Amoeba extends SuperClass {
-    // da code
+    // sample code
 }
 
 ```
@@ -57,15 +57,15 @@ class SuperClass {
 }
 
 class Square extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Circle extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Triangle extends SuperClass {
-    // da code
+    // sample code
 }
 
 class Amoeba extends SuperClass {
