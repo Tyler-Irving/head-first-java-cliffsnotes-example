@@ -5,7 +5,7 @@
 - Primitive types ("I'd like a double with extra foam, please")
 - Java keywords
 - Reference variables (remote control to an object)
-- Object declaration and assignment
+- Object declaration & assignment
 - Objects on the garbage-collectible heap
 
 ## What does Java think is a variable?
@@ -17,7 +17,7 @@ These hold fundamental values. Simple bit patterns. (integers, booleans, & float
 *Object Reference*
 Holds references to objects
 
-Variables must have a name and a type
+Variables must have a name & a type
 ```java
 
 public class App {
@@ -29,7 +29,7 @@ public class App {
 ```
 
 ## What is a primitive variable?
-A primitive variable is just like a cup. A container. It holds stuff, and in this case its a value. 
+A primitive variable is just like a cup. A container. It holds stuff, & in this case its a value. 
 2 Characteristics: Size & Type 
 
 |Type|Bit Depth|Value Range|
@@ -48,7 +48,7 @@ A primitive variable is just like a cup. A container. It holds stuff, and in thi
 - Don't start with a number, but they can be used in the name.
 - Name can be whatever you want, but they can be java keywords.
 
-Java has, as of right now, 51 keywords. I'm not naming them all, and you don't have to remember them. Just acknowledge their existence.
+Java has, as of right now, 51 keywords. I'm not naming them all, & you don't have to remember them. Just acknowledge their existence.
 
 ## What are reference variables?
 A reference variable isn't an object, but it holds the bits that allow you to access an object.
@@ -57,11 +57,11 @@ We do know that whatever it is, it represents one & only one object. JVM knows h
 
 ## What is declaration & assignment?
 - Step 1: Declare the reference variable
-Tells the JVM to allocate space for the reference variable and names that variable myDog. The reference variable is, forever, of type dog.
+Tells the JVM to allocate space for the reference variable & names that variable myDog. The reference variable is, forever, of type dog.
 - Step 2: Create an object
 JVM allocates space in the heap for the new object.
 - Step 3: Link the object & reference
 Assigns the new Dog to the reference variable myDog.
 
 ## What is the garbage-collectible heap?
-The garbage heap is where reference variables go to live & die. When they are created they need someplace to sit to be interacted with. Once they are finished being used, they disappear and die.
+The garbage heap is where reference variables go to live & die. When they are created they need someplace to sit to be interacted with. Once they are finished being used, they disappear & die.
