@@ -2,9 +2,9 @@
 
 ## Table of Contents
 - Chair Wars
-- Intro to Inheiritance
-- Intro to Overiding Methods
-- Whats in a Class
+- Intro to Inheritance
+- Intro to Overriding Methods
+- What's in a Class
 - Making Your First Object
 
 ## Why are they fighting over chairs? 
@@ -27,59 +27,59 @@ Now that your `superclass` is made, you can start on the classes that will make 
 
 ```java
 class SuperClass {
-   // rotate()
-   // playSound()
+ // rotate()
+ // playSound()
 }
 
 class Square extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Circle extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Triangle extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Amoeba extends SuperClass {
-    // sample code
+ // sample code
 }
 
 ```
-## Overiding methods?
+## Overriding methods?
 Overriding methods is built in to allow programmers the ability to change something about an object, without having to write a whole new class. In the case of the story both of the programmers finish the project, but the project manager hits them with the "We need this new part added last minute. Think you can h&le it? *doesn't wait for answer* Sweet. Get it to me by the end of the day" So the procedural programmer has to write a new function to appease the dem&s of the said project manager. The OOP programmer doesn't have to write a whole new class, he gets to override his 'rotation' method with the appropriate details for this specific shape. 
 ```java
 class SuperClass {
-   // rotate()
-   // playSound()
+ // rotate()
+ // playSound()
 }
 
 class Square extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Circle extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Triangle extends SuperClass {
-    // sample code
+ // sample code
 }
 
 class Amoeba extends SuperClass {
-    // rotate {
-    //    shape's specific rotation code
-    //}
-    //playSound {
-    // shape's specific sound code
-    //}
+ // rotate {
+ // shape's specific rotation code
+ //}
+ //playSound {
+ // shape's specific sound code
+ //}
 }
 ```
 
 ## What's in a class?
-This has been boiled down to two basic things:   
+This has been boiled down to two basic things: 
 - Instance Variables
 - Methods
 
@@ -87,36 +87,36 @@ Instance variables are things that the object that will be created from this cla
 Methods are what an object can do. To establish an underst&ing of your instance variables & methods early, you have to take a moment before writing the class to underst& what they should be doing. In the case of instance variables, you have to think about what the object needs to know about itself. Once that is done you can design methods to complete the work that you need to. 
 
 ### Clarification
-A class is NOT an object!   
-A class IS a blueprint to create objects!   
+A class is NOT an object! 
+A class IS a blueprint to create objects! 
 
 This is why you can hold all the basic information in a superclass, & create different objects with them.
 Another way of looking at is like making a pie, they all start the same way, but the taste & look completely different.
 
 ## How does one make an object?
-To make an object you first have to make two classes. One class is going to be a tester class. This class is strictly to test that you can successfully make objects with the other class. The second class is the blueprint that creates objects through your JVM.
+To make an object you first have to create two classes. One class is going to be a tester class. This class is strictly to test that you can successfully make objects with the other class. The second class is the blueprint that creates objects through your JVM.
 
 ### Example
 ```Java
 
 //Step 1 Make the blueprint class
 class Dog {
-    int size;
-    String breed;
-    String name;
+ int size;
+ String breed;
+ String name;
 
-    void bark() {
-        sytem.out.Println("Ruff")
-    }
+ void bark() {
+ sytem.out.Println("Ruff")
+ }
 }
 
 //Step 2 Make the test class
 class DogTestDrive {
-    public static void main(String[] args){
-        Dog d = new Dog();
-        d.size = 40;
-        d.bark();
-    }
+ public static void main(String[] args){
+ Dog d = new Dog();
+ d.size = 40;
+ d.bark();
+ }
 }
 
 

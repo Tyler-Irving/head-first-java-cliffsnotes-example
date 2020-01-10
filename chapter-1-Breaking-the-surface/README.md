@@ -11,7 +11,7 @@
 ## How does Java work?
 Java follows four steps
 1. Source Code
-- The first step is the programmers (you) work. The code is written here.
+- The first step is the programmer's (you) work. The code is written here.
 2. Complier
 - The second step is where the source code that was written in step 1 is checked to make sure that it is written correctly & 
 can be successfully ran.
@@ -21,21 +21,21 @@ can be successfully ran.
 - Your friends don’t have a physical Java Machine, but they all have a virtual Java machine (implemented in software) running inside their electronic gadgets. The virtual machine reads & runs the bytecode.
 
 ## How is code structured in Java?
-Java's code structure of 3 things: the source file, class/es, & a main method.
+Java's code structure of 3 things: the source file, class/es, & the main method.
 
 ## What is does a Java class look like?
 ```java 
 public class SampleApp {
-    public static void main (String[] args) {
-        System.out.print("Hello World");
-    }
+ public static void main (String[] args) {
+ System.out.print("Hello World");
+ }
 }
 ```
 - `public` - makes the class & method available to everyone
-- `class` - in Java you have to declare the type of each new thing you make
+- `class` - in Java, you have to declare the type of each new thing you make
 - `SampleApp` - This is just the name of the app
 - `{` / `}` - these tell the compiler where the code for a class or a method start, & end
-- `void` - This is the return type of a method, in this case the return type is void because the method doesn't return a value
+- `void` - This is the return type of a method, in this case, the return type is void because the method doesn't return a value
 - `main` - the name of the method
 - `String[] args` - arguments to the method. This method must be given an array of Strings, & the array will be called 'args'
 - `System.out.print()` - this says "print to standard output" (defaults to the command-line)
@@ -50,15 +50,15 @@ In Java, everything goes into a class. Running a program means telling the Java 
 In chapter 1 there are 3 types of loops mentioned: `while`, `do-while`, & `for` loops. This chapter only goes into the logic behind a `while` loop & it works just the same as in python. A conditional test is needed for the loop to even begin, & the result of the test is a `boolean` value (`true` || `false`). If the value is `true`, the code block will run & repeat, always starting at the test to check the value. Else if the value is `false`, the loop will not run & the program will continue past it unless that is the end of your program.
 
 ## What does conditional branching look like in Java?
-Conditional branching follows the same logic that a `while` loop follows, but with a couple differences. 
+Conditional branching follows the same logic that a `while` loop follows, but with a couple of differences. 
 Take a look at this block of code
 ```java 
 if (randomNumber > 5) {
-    System.out.println("The number is greater than 5");
+ System.out.println("The number is greater than 5");
 } else if (randomNumber < 5) {
-    System.out.println("The number is less than 5");
+ System.out.println("The number is less than 5");
 } else if (randomNumber == 5) {
-    System.out.println("The number is 5");
+ System.out.println("The number is 5");
 }
 ```
 The if statements are checking if the conditional is `true` or `false` but in a different way. Instead of saying "while the randomNumber is greater than 5, do this", it's asking "If the randomNumber is greater than 5, do this. If not, do something else." This gives you greater reach for more conditions in your code, & they work together in tandem. 
