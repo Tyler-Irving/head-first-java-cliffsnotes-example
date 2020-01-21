@@ -26,7 +26,7 @@ Once you've established what all the objects will have in common, you can create
 Now that your `superclass` is made, you can start on the classes that will make up your objects (yes i am talking about the shapes). To make these classes do what you created in the superclass, just inherit the class into the shape classes.
 
 ```java
-class SuperClass {
+class Shape {
  // rotate()
  // playSound()
 }
@@ -49,7 +49,7 @@ class Amoeba extends SuperClass {
 
 ```
 ## Overriding methods?
-Overriding methods is built in to allow programmers the ability to change something about an object, without having to write a whole new class. In the case of the story both of the programmers finish the project, but the project manager hits them with the "We need this new part added last minute. Think you can h&le it? *doesn't wait for answer* Sweet. Get it to me by the end of the day" So the procedural programmer has to write a new function to appease the dem&s of the said project manager. The OOP programmer doesn't have to write a whole new class, he gets to override his 'rotation' method with the appropriate details for this specific shape. 
+Overriding methods is built in to allow programmers the ability to change something about an object, without having to write a whole new class. In the case of the story both of the programmers finish the project, but the project manager hits them with the "We need this new part added last minute. Think you can handle it? *doesn't wait for answer* Sweet. Get it to me by the end of the day" So the procedural programmer has to write a new function to appease the demands of the said project manager. The OOP programmer doesn't have to write a whole new class, he gets to override his 'rotation' method with the appropriate details for this specific shape. 
 ```java
 class SuperClass {
  // rotate()
@@ -84,7 +84,7 @@ This has been boiled down to two basic things:
 - Methods
 
 Instance variables are things that the object that will be created from this class knows about itself.
-Methods are what an object can do. To establish an underst&ing of your instance variables & methods early, you have to take a moment before writing the class to underst& what they should be doing. In the case of instance variables, you have to think about what the object needs to know about itself. Once that is done you can design methods to complete the work that you need to. 
+Methods are what an object can do. To establish an understanding of your instance variables & methods early, you have to take a moment before writing the class to understand what they should be doing. In the case of instance variables, you have to think about what the object needs to know about itself. Once that is done you can design methods to complete the work that you need to. 
 
 ### Clarification
 A class is NOT an object! 
