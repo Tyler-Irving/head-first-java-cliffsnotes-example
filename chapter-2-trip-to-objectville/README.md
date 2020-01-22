@@ -31,19 +31,19 @@ class Shape {
  // playSound()
 }
 
-class Square extends SuperClass {
+class Square extends Shape {
  // sample code
 }
 
-class Circle extends SuperClass {
+class Circle extends Shape {
  // sample code
 }
 
-class Triangle extends SuperClass {
+class Triangle extends Shape {
  // sample code
 }
 
-class Amoeba extends SuperClass {
+class Amoeba extends Shape {
  // sample code
 }
 
